@@ -28,7 +28,7 @@ with open(filename, 'r') as csvfile:
         value = row[1].replace(" ", "").lower()
         arr[value] = arr.get(value,0) + 1
         #arr = row.split(',')
-arr = {k: v for k, v in sorted(arr.items(), key=lambda item: item[1])}
+arr = {k: v for k, v in sorted(arr.items(), reverse=True , key=lambda item: item[1])}
 
 # printing the field names in order
 with open('amahi.txt', 'w') as f:
