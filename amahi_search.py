@@ -25,7 +25,7 @@ with open(filename, 'r') as csvfile:
     for row in rows:
      if row[1]:
         #removing all whitespaces and counting the word
-        value = row[1].replace(" ", "")
+        value = row[1].replace(" ", "").lower()
         arr[value] = arr.get(value,0) + 1
         #arr = row.split(',')
 arr = {k: v for k, v in sorted(arr.items(), key=lambda item: item[1])}
