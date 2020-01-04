@@ -2,7 +2,7 @@
 import csv
 
 # csv file name
-filename = "amahi-searches-2010-2020.csv"
+filename = "CSV FLE"
 
 # initializing the titles and rows list
 fields = []
